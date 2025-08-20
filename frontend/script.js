@@ -103,3 +103,5 @@ let usuarios = [];
       emprestimos.splice(index, 1);
       renderizarEmprestimos();
     }
+
+
