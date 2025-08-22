@@ -1,76 +1,32 @@
 <!DOCTYPE html>
 <html lang="PT-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Biblioteca</title>
-</head>
-<body>
+  </head>
+  <body>
 
-<div class="section">
-    <h2>Cadastro de Usuário</h2>
-    <form id="formUsuario">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" required>
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" required>
-    <button type="submit">Cadastrar Usuário</button>
-    </form>
-</div>
+    <header><h1>biblioteca comunitaria</h1></header>
+    <main class="container">
+      <div class="container_cadastro">
+        <button class="bnt"><a href="./usuario.html">Cadastro de Usuário</a></button></button>
+      </div>
 
-<div class="section">
-    <h2>Cadastro de Livro</h2>
-    <form id="formLivro">
-    <label for="titulo">Título:</label>
-    <input type="text" id="titulo" required>
-    <label for="autor">Autor:</label>
-    <input type="text" id="autor" required>
-    <label for="categoria">Categoria:</label>
-    <input type="text" id="categoria" required>
-    <label for="ano">Ano de Publicação:</label>
-    <input type="number" id="ano" required>
-    <button type="submit">Cadastrar Livro</button>
-    </form>
-</div>
+      <div class="container_cadastro">
+        <button class="bnt"><a href="./livro.html">Cadastro de livro</a></button>
+      </div>
 
+      <div class="container_cadastro">
+        <button class="bnt"><a href="emprestimo.html"> Registro de Empréstimo</a></button>
+      </div>
 
-<div class="section">
-    <h2>Registro de Empréstimo</h2>
-    <form id="formEmprestimo">
-    <label for="usuarioSelect">Usuário:</label>
-    <select id="usuarioSelect" required></select>
+      <div class="container_cadastro">
+       <button class="bnt"><a href="./gerenciar.html">Gerenciador</a></button>
+      </div>
+    </main>
 
-    <label for="livroSelect">Livro:</label>
-    <select id="livroSelect" required></select>
-
-    <label for="dataDevolucao">Data Prevista de Devolução:</label>
-    <input type="date" id="dataDevolucao" required>
-    <button type="submit">Registrar Empréstimo</button>
-    </form>
-</div>
-
-<div class="section">
-    <h2>Gerenciar Empréstimos</h2>
-    <table id="tabelaEmprestimos">
-    <thead>
-        <tr>
-        <th>ID</th>
-        <th>Usuário</th>
-        <th>Livro</th>
-        <th>Data Empréstimo</th>
-        <th>Devolução Prevista</th>
-        <th>Status</th>
-        <th>Ações</th>
-        </tr>
-    </thead>
-    <tbody></tbody>
-    </table>
-</div>
-<h1>Status</h1>
-
-<script src="script.js"></script>
-
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
